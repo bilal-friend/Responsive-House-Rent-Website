@@ -345,7 +345,7 @@ header {
 /* Making Responsive */
 @media (max-width: 1080px) {
   .container {
-    margin: 0 14px;
+    margin: 0 1rem;
   }
   .all {
     grid-template-columns: 0.7fr 1fr;
@@ -359,11 +359,9 @@ header {
   section {
     padding: 4rem 0 3rem;
   }
-  .properties-block {
-    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-    gap: 1rem;
-  }
-  .footer-info {
+  .properties-block,
+  .footer-info,
+  .sales {
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     gap: 1rem;
   }
@@ -427,5 +425,30 @@ header {
   .sign-up,
   .all {
     margin: 100px 10vw 0;
+  }
+  .about-text span {
+    font-size: 0.9rem;
+  }
+  .about-text h1,
+  .properties-text h1,
+  .newsletter h1 {
+    font-size: 1.4rem;
+  }
+  .sales-card {
+    padding: 10px;
+  }
+  .properties-block {
+    padding: unset;
+  }
+  .about-img {
+    order: 2;
+  }
+  .about {
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .news-form input {
+    width: 100px;
   }
 }
