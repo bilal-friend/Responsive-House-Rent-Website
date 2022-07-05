@@ -230,7 +230,8 @@ header {
   border-radius: 5rem;
   width: 440px;
   margin: auto;
-  position: relative;
+  display: flex;
+  justify-content: space-between;
 }
 .news-form input {
   border: none;
@@ -344,7 +345,7 @@ header {
 /* Making Responsive */
 @media (max-width: 1080px) {
   .container {
-    margin: 0 10px;
+    margin: 0 14px;
   }
   .all {
     grid-template-columns: 0.7fr 1fr;
@@ -421,6 +422,10 @@ header {
   }
   .news-form input,
   .news-form button {
-    font-size: 17px;
+    font-size: 1rem;
+  }
+  .sign-up,
+  .all {
+    margin: 100px 10vw 0;
   }
 }
