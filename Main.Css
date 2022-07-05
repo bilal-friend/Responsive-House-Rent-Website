@@ -235,7 +235,6 @@ header {
 .news-form input {
   border: none;
   outline: none;
-  width: 280px;
   font-size: 20px;
 }
 
@@ -345,7 +344,7 @@ header {
 /* Making Responsive */
 @media (max-width: 1080px) {
   .container {
-    margin: 0 1rem;
+    margin: 0 10px;
   }
   .all {
     grid-template-columns: 0.7fr 1fr;
@@ -413,5 +412,15 @@ header {
   }
   #menu:checked ~ .navbar {
     transform: translateY(250px);
+  }
+  .properties-text {
+    width: 90vw;
+  }
+  .news-form {
+    width: 90vw;
+  }
+  .news-form input,
+  .news-form button {
+    font-size: 17px;
   }
 }
