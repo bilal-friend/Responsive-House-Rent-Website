@@ -385,32 +385,34 @@ header {
   }
   .navbar {
     position: absolute;
-    transform: translateY(-300px);
+    top: -300px;
     left: 0;
-
-    background: var(--second-color);
-
-    width: 100%;
-    align-items: center;
-
+    right: 0;
+    display: flex;
     flex-direction: column;
-    padding: 20px;
-    transition: 0.5s;
+    text-align: center;
+    row-gap: 1rem;
+    padding: 1rem;
+    background: var(--second-color);
+    transition: 0.5s, clip-path 1s;
+    clip-path: circle(0% at 100% 1%);
   }
   .navbar li {
-    margin-bottom: 30px;
+    display: block;
   }
   .navbar li a {
     color: var(--bg-color);
-    padding: 20px 170px;
     display: block;
+    padding: 0.5rem;
   }
   .navbar li a:hover {
     background: var(--main-color);
     color: var(--bg-color);
+    transition: 0.2s;
   }
   #menu:checked ~ .navbar {
-    transform: translateY(250px);
+    top: 100%;
+    clip-path: circle(144% at 100% 1%);
   }
   .properties-text {
     width: 90vw;
@@ -422,6 +424,7 @@ header {
   .news-form button {
     font-size: 1rem;
   }
+
   .sign-up,
   .all {
     margin: 100px 10vw 0;
@@ -449,6 +452,11 @@ header {
 }
 @media (max-width: 500px) {
   .news-form input {
-    width: 100px;
+    width: 70%;
+  }
+  .news-form {
+    width: auto;
   }
 }
+
+/* You Have to Learn About Clip-Path */
